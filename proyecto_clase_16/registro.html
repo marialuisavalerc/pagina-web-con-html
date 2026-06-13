@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Registro</title>
+    <meta
+      name="description"
+      content="Registrate para formar parte de nuestros cursos"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="icon" href="icon_gato.png" type="image/png" sizes="any" />
+    <link rel="apple-touch-icon" href="icon_gato.png" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <header>
+      <figure>
+        <img
+          src="img/common/logo_conquer.png"
+          alt="Logotipo de Conquer"
+          width="150px"
+        />
+      </figure>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="quienes_somos.html">Quienes Somos</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li>Registro</li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Registrate</h1>
+      <p>Para poder acceder a nuestraa academia necesitamos que te registres</p>
+      <form action="post" enctype="multipart/form-data">
+        <p>
+          <label for="name">Nombre completo</label>
+          <input type="text" name="nombre" id="name" />
+        </p>
+
+        <p>
+          <label for="bithday">Fecha de nacimiento</label>
+          <input type="date" name="fecha_nacimiento" id="birthdat" />
+        </p>
+
+        <p>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </p>
+
+        <p>
+          <label for="address">Dirección</label>
+          <input type="text" name="direccion" id="address" />
+        </p>
+
+        <p>
+          <label for="web">Página web</label>
+          <input type="url" name="web" id="web" />
+        </p>
+
+        <p>
+          <label for="photo">Foto</label>
+          <input type="file" name="foto" id="photo" />
+        </p>
+
+        <p>
+          <label for="bio">Biografía</label><br />
+          <textarea name="bio" id="bio" cols="30" rows="5"></textarea>
+        </p>
+
+        <p>
+          <button>Enviar</button>
+          <input type="reset" value="Borrar formulario" />
+        </p>
+      </form>
+    </main>
+
+    <footer>
+      <p>© Conquer Blocks 2026 - <a href="aviso_legal.html">Aviso Legal</a></p>
+    </footer>
+  </body>
+</html>
